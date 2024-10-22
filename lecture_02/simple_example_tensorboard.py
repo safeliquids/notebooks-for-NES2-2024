@@ -20,7 +20,7 @@ import datetime
 
 ###############################################
 # Define the log directory for TensorBoard
-log_dir = "./logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+log_dir = "./logs/fit/simple_" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 # print(os.getcwd()) 
 
 # Clear any logs from previous runs
@@ -83,16 +83,8 @@ num_epochs = 4
 batch_size = 32
 # model.fit(x_train, y_train, epochs=num_epochs, batch_size = batch_size, callbacks=[tensorboard_callback])
 
-# Add test data to the log
-def evaluate_test(epoch, logs):
-      if epoch + 1 == num_epochs:
-          test_logs = model.evaluate(
-              x_test, y_test, batch_size, return_dict=True, verbose=0,
-          )
-          logs.update({"val_test_" + name: value for name, value in test_logs.items()})
-
 # Train the model with callbacks
-model.fit(x_train, y_train, epochs=num_epochs, batch_size = batch_size, callbacks=[keras.callbacks.LambdaCallback(on_epoch_end=evaluate_test),tensorboard_callback])
+model.fit(x_train, y_train, epochs=num_epochs, batch_size = batch_size, callbacks=[tensorboard_callback])
 
 ###############################################
 # Evaluate the model

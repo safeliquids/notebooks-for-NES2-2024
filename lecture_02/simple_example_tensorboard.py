@@ -14,7 +14,7 @@
 # with a timestamp to organize different training runs.
 
 import keras
-from tensorflow.keras.datasets import mnist as mnist
+from keras.datasets import mnist
 import os
 import datetime
 

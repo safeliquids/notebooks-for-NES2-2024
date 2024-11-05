@@ -13,7 +13,7 @@
 [![Open in Colab](https://img.shields.io/badge/Open%20in%20Colab-blue?style=flat&logo=googlecolab)](https://colab.research.google.com/github/reitezuz/notebooks-for-NES2-2024/blob/main/lecture_02/simple_example_tensorboard.ipynb)
 
 
-[2. Lecture - Simple MLP with tensorboard](https://colab.research.google.com/github/reitezuz/notebooks-for-NES2-2024/blob/main/lecture_02/simple_example_tensorboard.py)  
+[2. Lecture - Simple MLP with tensorboard (.py)](https://colab.research.google.com/github/reitezuz/notebooks-for-NES2-2024/blob/main/lecture_02/simple_example_tensorboard.py)  
 
 [5. Lecture - Multiclass classification](https://colab.research.google.com/github/reitezuz/notebooks-for-NES2-2024/blob/main/lecture_05/multiclass_classification_mnist.ipynb)  
 [![Open in Colab](https://img.shields.io/badge/Open%20in%20Colab-blue?style=flat&logo=googlecolab)](https://colab.research.google.com/github/reitezuz/notebooks-for-NES2-2024/blob/main/lecture_05/multiclass_classification_mnist.ipynb)
@@ -26,6 +26,10 @@
 [5. Lecture - Regression](https://colab.research.google.com/github/reitezuz/notebooks-for-NES2-2024/blob/main/lecture_05/regression_boston_housing.ipynb)  
 [![Open in Colab](https://img.shields.io/badge/Open%20in%20Colab-blue?style=flat&logo=googlecolab)](https://colab.research.google.com/github/reitezuz/notebooks-for-NES2-2024/blob/main/lecture_05/regression_boston_housing.ipynb)
 
+[6. Lecture - CNN on MNIST](https://colab.research.google.com/github/reitezuz/notebooks-for-NES2-2024/blob/main/lecture_06/cnn_mnist.ipynb)  
+[![Open in Colab](https://img.shields.io/badge/Open%20in%20Colab-blue?style=flat&logo=googlecolab)](https://colab.research.google.com/github/reitezuz/notebooks-for-NES2-2024/blob/main/lecture_06/cnn_mnist.ipynb)
 
+[6. Lecture - MLP on MNIST](https://colab.research.google.com/github/reitezuz/notebooks-for-NES2-2024/blob/main/lecture_06/mlp_mnist.ipynb)  
+[![Open in Colab](https://img.shields.io/badge/Open%20in%20Colab-blue?style=flat&logo=googlecolab)](https://colab.research.google.com/github/reitezuz/notebooks-for-NES2-2024/blob/main/lecture_06/mlp_mnist.ipynb)
 
 

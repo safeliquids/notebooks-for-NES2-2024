@@ -42,15 +42,6 @@ tensorboard_callback = keras.callbacks.TensorBoard(
 )
 
 ###############################################
-# Set seeds for reproducibility
-import numpy as np
-import random
-import tensorflow as tf
-np.random.seed(42)
-random.seed(42)
-tf.random.set_seed(42)
-
-###############################################
 # Load (and analyze) the data
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
@@ -64,7 +55,7 @@ x_test = x_test.astype('float32') / 255
 # Define the model
 model = keras.Sequential([
     keras.layers.InputLayer(shape=(28 * 28,)),
-    keras.layers.Dense(512, activation='relu'),
+    keras.layers.Dense(256, activation='relu'),
     #  keras.layers.Dropout(0.2),
     keras.layers.Dense(10, activation='softmax')
 ])
@@ -79,19 +70,18 @@ model.compile(optimizer='sgd',
 
 ###############################################
 # Train the model with the Tensorboard callback
-num_epochs = 4
+num_epochs = 8
 batch_size = 32
-# model.fit(x_train, y_train, epochs=num_epochs, batch_size = batch_size, callbacks=[tensorboard_callback])
 
 # Train the model with callbacks
 model.fit(x_train, y_train, epochs=num_epochs, batch_size = batch_size, callbacks=[tensorboard_callback])
 
 ###############################################
 # Evaluate the model
-model.evaluate(x_test, y_test)
+test_logs = model.evaluate(x_test, y_test)
 
 # Save the model
-model.save('mnist_simple_mlp_model_0.keras')
+#model.save('mnist_simple_mlp_model_0.keras')
 
 # Load the model
 # loaded_model = keras.models.load_model('mnist_simple_mlp_model_0.keras')
